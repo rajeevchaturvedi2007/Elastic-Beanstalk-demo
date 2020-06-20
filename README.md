@@ -25,15 +25,18 @@ Add New rule as : **'All Traffic' ---> 0.0.0.0/0**(automatically added zero valu
 
 # Sample **application.properties** File
 
-**server.port=5000**   
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url = jdbc:mysql://aa1librljrh4vh2.cr4epiajkjcu.eu-west-2.rds.amazonaws.com:3306/users_database?useSSL=false
+- **server.port=5000**   
+- spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-spring.datasource.username = masterUser
-spring.datasource.password = masterPassword
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+- spring.datasource.url = jdbc:mysql://aa1librljrh4vh2.cr4epiajkjcu.eu-west-2.rds.amazonaws.com:3306/users_database?useSSL=false
 
-spring.jpa.hibernate.ddl-auto = update
+- spring.datasource.username = masterUser
+
+- spring.datasource.password = masterPassword
+
+- spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+- spring.jpa.hibernate.ddl-auto = update
 
 ## Important Notes
 1) No need to give port number in the API endpoint URL
