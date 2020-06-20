@@ -1,0 +1,27 @@
+
+ show database;
+
+ Data base Name is :  user_database
+
+  CREATE TABLE users(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   first_Name varchar(255),
+    last_Name varchar(255) NOT NULL,    
+    email_address varchar(255) NOT NULL, 
+    created_at date NOT NULL,
+    created_by varchar(255) NOT NULL,
+    updated_at date NOT NULL,
+   updated_by varchar(255) NOT NULL, 
+    PRIMARY KEY (id)
+);
+
+
+insert into users values (2,'Anuj', 'Chaturvedi','anuj@gmail.com','1984-02-13','Rajeev','2020-05-18','Sandeep');  
+
+ create database users_database;
+
+  create table users(id int NOT NULL AUTO_INCREMENT PRIMARY KEY,first_name varchar(255) NOT NULL,last_name varchar(255) NOT NULL, email_address varchar(255) NOT NULL,created_at DATE NOT NULL,created_by varchar(255) NOT NULL, updated_at DATE NOT NULL, updated_by varchar(255) NOT NULL);
+
+    insert into users values(1,'Raj','Choubey','myemail@gmail.com','2008-7-04','Rajeev','2008-7-04','Aadi');
+
+   insert into users values(2,'Abhay','Choubey','myemail@gmail.com','2008-7-04','Rajeev','2008-7-04','Anuj')
