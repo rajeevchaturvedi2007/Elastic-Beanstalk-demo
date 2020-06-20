@@ -1,8 +1,8 @@
 # Elastic-Beanstalk-demo
-This project using Spring Boot and My SQL database and deploy the JAR file in the AWS Elastic Beanstalk
+This project using **Spring Boot** and **My SQL database** and deploy the JAR file in the **AWS Elastic Beanstalk**.
 
 ## Key Points:
-1) VERY IMPORTNAT: Must add  **SERVER.PORT=5000** in the **application.property** file of the Spring Boot, otherwise get **502 Bad Gateway** error. 
+1) VERY IMPORTNAT: Must add  **SERVER.PORT=5000** in the **application.properties** file of the Spring Boot, otherwise get **502 Bad Gateway** error. 
 2) From command prompt used the - **mvn clan package** command and create the JAr file of the project
 3) Go to AWS Elastic Beanstalk console - https://eu-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=eu-west-2#/applications
 4) Create the Application and Environment using Java 8
@@ -34,18 +34,18 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDial
 spring.jpa.hibernate.ddl-auto = update
 
 ## Important Notes
-A) No need to give port number in the API endpoint URL
+1) No need to give port number in the API endpoint URL
     Example : http://domain1.eu-west-2.elasticbeanstalk.com/api/v1/users   (working URL, No Port Number)
-B) No need to set any environmnt Property in the AWS Elastic BeanSole --> Application-->Software
-C) Just for info - Your JAR file Application deploy in the EC2 instance and which has a Security Group and which has Inbound Rule
-D) Probably the EC2 instance belongs to AWS Elastic Beanstalk start with - 'awsesb...
+2) No need to set any environmnt Property in the AWS Elastic BeanSole --> Application-->Software
+3) Just for info - Your JAR file Application deploy in the EC2 instance and which has a Security Group and which has Inbound Rule
+4) Probably the EC2 instance belongs to AWS Elastic Beanstalk start with - 'awsesb...
 
 ## To re-used existig project
 ---------------------------------
 1) Go to AWS Elastic Beanstalk console - https://eu-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=eu-west-2#/applications
 2) Create Application, upload JAR, create RDS using **Configuration-->RDS**, add new rule in the inbound as 'AnyWhere' the test connection by MYSQLyog, create the database, create the table, update application.prperties with database details.
 3) Test the application end points.
- 
+
 # Key Git Commands:
 -------------- Git Commands -------------------------------
 
